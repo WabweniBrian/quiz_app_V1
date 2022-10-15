@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <!-- CSS CLASSES AND UTILITIES -->
+    <link rel="stylesheet" href="assets/css/simplified.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/logo3.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <div id="error" class="fixed top-none mt-2 left-50 text-center"></div>
+
+    <div class="quiz-wrapper relative">
+        <div class="quiz-header">
+            <i class="feather-layers"></i>
+            <h2>WABZ QUIZ</h2>
+            <hr>
+        </div>
+        <div id="container">
+            <h3 id="question" class="text-muted">Question</h3>
+            <div class="answers">
+                <div class="input-radio my-2">
+                    <input type="radio" name="answer" id="a" class="check-danger answer">
+                    <label for="a" id="a_text"> Question 1</label>
+                </div>
+                <div class="input-radio my-2">
+                    <input type="radio" name="answer" id="b" class="check-danger answer">
+                    <label for="b" id="b_text"> Question 2</label>
+                </div>
+                <div class="input-radio my-2">
+                    <input type="radio" name="answer" id="c" class="check-danger answer">
+                    <label for="c" id="c_text"> Question 3</label>
+                </div>
+                <div class="input-radio my-2">
+                    <input type="radio" name="answer" id="d" class="check-danger answer">
+                    <label for="d" id="d_text"> Question 4</label>
+                </div>
+            </div>
+
+            <p id="show-no-of-qst" class="numbering absolute"></p>
+            <button class="btn btn-primary" id="submitBtn">SUBMIT</button>
+        </div>
+    </div>
+
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/quizData.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
